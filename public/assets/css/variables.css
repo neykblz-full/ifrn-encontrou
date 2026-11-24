@@ -1,0 +1,84 @@
+/* ==========================================================================
+   IFRN ENCONTROU — Variáveis de Design e Identidade Visual Institucional
+   Campus Lajes — Rio Grande do Norte
+   ========================================================================== */
+
+:root {
+  /* Cores Institucionais IFRN */
+  --ifrn-green: #2f9e41;
+  --ifrn-green-dark: #217a30;
+  --ifrn-green-darker: #185c23;
+  --ifrn-green-light: #eaf7ed;
+  --ifrn-green-border: #b7e4c0;
+
+  --ifrn-red: #cd191e;
+  --ifrn-red-dark: #a61216;
+  --ifrn-red-light: #fdecec;
+
+  /* Neutros e Superfícies */
+  --bg-page: #f4f7f6;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f8fafc;
+  --bg-muted: #eef2f6;
+
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-inverse: #ffffff;
+
+  --border-color: #dbe3ea;
+  --border-strong: #cbd5e1;
+
+  /* Cores Semânticas e Status */
+  --status-disponivel-bg: #dcfce7;
+  --status-disponivel-text: #166534;
+  --status-disponivel-border: #86efac;
+
+  --status-pendente-bg: #fef3c7;
+  --status-pendente-text: #92400e;
+  --status-pendente-border: #fcd34d;
+
+  --status-devolucao-bg: #dbeafe;
+  --status-devolucao-text: #1e40af;
+  --status-devolucao-border: #93c5fd;
+
+  --status-devolvido-bg: #e0f2fe;
+  --status-devolvido-text: #075985;
+  --status-devolvido-border: #7dd3fc;
+
+  --status-rejeitado-bg: #fee2e2;
+  --status-rejeitado-text: #991b1b;
+  --status-rejeitado-border: #fca5a5;
+
+  --status-arquivado-bg: #f1f5f9;
+  --status-arquivado-text: #475569;
+  --status-arquivado-border: #cbd5e1;
+
+  /* Tipografia */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+  /* Espaçamentos e Layout */
+  --container-max: 1200px;
+  --header-height: 72px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  /* Sombras */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 6px 16px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 14px 32px rgba(15, 23, 42, 0.12);
+
+  /* Camadas (Z-Index) */
+  --z-navbar: 100;
+  --z-dropdown: 200;
+  --z-modal: 500;
+  --z-toast: 900;
+
+  /* Transições */
+  --transition-fast: 150ms ease;
+  --transition-normal: 240ms ease;
+}

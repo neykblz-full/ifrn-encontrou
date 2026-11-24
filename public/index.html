@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IFRN Encontrou — Achados e Perdidos do Campus Lajes</title>
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/catalogo.css" />
+</head>
+<body>
+  <header id="app-navbar"></header>
+
+  <main>
+    <!-- Hero Institucional -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">IFRN Campus Lajes • Plataforma Oficial de Achados e Perdidos</div>
+        <h1 class="hero-title">Perdeu ou encontrou algum objeto no campus?</h1>
+        <p class="hero-subtitle">
+          O IFRN Encontrou centraliza todos os pertences localizados no Campus Lajes com validação da APAC,
+          garantindo transparência e segurança na devolução ao verdadeiro dono.
+        </p>
+
+        <form id="hero-search-form" class="hero-search-box" role="search">
+          <input
+            type="search"
+            id="hero-search-input"
+            placeholder="Ex: garrafa térmica, calculadora, chave, fone..."
+            aria-label="Pesquisar objeto perdido"
+          />
+          <button type="submit" class="btn btn-primary">Buscar Objeto</button>
+        </form>
+
+        <div class="hero-actions">
+          <a href="objetos.html" class="btn btn-hero-ghost">Ver Todos os Objetos Disponíveis</a>
+          <a href="cadastrar-objeto.html" class="btn btn-secondary">Registrar Objeto Encontrado</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Indicadores em Tempo Real -->
+    <section class="stats-strip">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">📦</div>
+            <div>
+              <div class="stat-value" id="stat-disponiveis">0</div>
+              <div class="stat-label">Objetos aguardando o dono</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">🤝</div>
+            <div>
+              <div class="stat-value" id="stat-devolvidos">0</div>
+              <div class="stat-label">Pertences devolvidos com sucesso</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">🏫</div>
+            <div>
+              <div class="stat-value" id="stat-locais">10</div>
+              <div class="stat-label">Setores monitorados no Campus Lajes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Últimos Objetos Publicados -->
+    <section class="section-block">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Últimos Objetos Disponíveis</h2>
+            <p class="section-subtitle">Itens conferidos e liberados pela equipe da APAC para retirada.</p>
+          </div>
+          <a href="objetos.html" class="btn btn-outline-green btn-sm">Explorar catálogo completo →</a>
+        </div>
+
+        <div id="recent-objetos-grid" class="objetos-grid"></div>
+      </div>
+    </section>
+
+    <!-- Fluxo de Funcionamento -->
+    <section class="section-block">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Como funciona o processo de devolução</h2>
+            <p class="section-subtitle">Segurança para quem achou e garantia para o legítimo proprietário.</p>
+          </div>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">1</div>
+            <h3>Registro do Objeto</h3>
+            <p>Quem encontra um pertence no campus preenche o formulário com foto, local e data.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">2</div>
+            <h3>Moderação da APAC</h3>
+            <p>Servidores autorizados da APAC conferem o registro antes de publicá-lo na vitrine.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">3</div>
+            <h3>Solicitação Privada</h3>
+            <p>O dono identifica o item e descreve detalhes exclusivos para comprovar a posse.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">4</div>
+            <h3>Retirada Presencial</h3>
+            <p>Após aprovação da APAC, o estudante retira o objeto e o sistema registra a baixa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="assets/js/mock-data.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/pages/home.js"></script>
+</body>
+</html>

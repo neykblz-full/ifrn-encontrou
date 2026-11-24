@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes do Objeto — IFRN Encontrou</title>
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/catalogo.css" />
+</head>
+<body>
+  <header id="app-navbar"></header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Caminho de navegação">
+      <a href="index.html">Início</a>
+      <span>/</span>
+      <a href="objetos.html">Objetos Encontrados</a>
+      <span>/</span>
+      <span id="breadcrumb-title">Detalhes</span>
+    </nav>
+
+    <div id="detalhes-container"></div>
+  </main>
+
+  <!-- Modal de Solicitação de Devolução -->
+  <div id="modal-solicitacao" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-sol-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="modal-sol-title" class="modal-title">Solicitar Devolução do Objeto</h2>
+        <button type="button" class="modal-close" id="btn-close-modal" aria-label="Fechar janela">&times;</button>
+      </div>
+      <form id="form-solicitacao">
+        <div class="modal-body">
+          <div class="alert alert-info">
+            <strong>Privacidade e Verificação (LGPD):</strong> Sua justificativa será visualizada exclusivamente pelos
+            servidores autorizados da APAC para confirmar que o item pertence a você.
+          </div>
+
+          <div class="form-group">
+            <label for="justificativa-input" class="form-label">
+              Comprove que este objeto é seu <span class="required">*</span>
+            </label>
+            <textarea
+              id="justificativa-input"
+              class="form-control"
+              required
+              minlength="15"
+              placeholder="Informe detalhes específicos que não aparecem na foto: marca, conteúdo interno, adesivos, arranhões, horário em que perdeu, etc."
+            ></textarea>
+            <span class="form-hint">Mínimo de 15 caracteres. Quanto mais preciso, mais rápida será a liberação pela APAC.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="btn-cancel-modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Enviar Solicitação</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="app-footer"></div>
+
+  <script src="assets/js/mock-data.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/pages/detalhes.js"></script>
+</body>
+</html>
